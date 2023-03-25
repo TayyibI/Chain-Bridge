@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>gTrade Trading Interface</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">
+         ChainBridge
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="../ETHDubai comp/index.html">Ethereum</a></li>
+         <li><a href="../ClayStack/index.html">ClayStack</a></li>
+         <li><a  class="active"  href="./Gains/index.html">Gains</a></li>
+        
+      </ul>
+   </nav>
+
+    <header>
+      <h1>gTrade Trading Interface</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Trade</h2>
+        <form>
+          <label for="asset">Asset:</label>
+          <select id="asset">
+            <option value="BTC/USD">BTC/USD</option>
+            <option value="ETH/USD">ETH/USD</option>
+            <option value="AAPL">AAPL</option>
+            <option value="EUR/USD">EUR/USD</option>
+          </select>
+          <label for="leverage">Leverage:</label>
+          <select id="leverage">
+            <option value="1x">1x</option>
+            <option value="2x">2x</option>
+            <option value="5x">5x</option>
+            <option value="10x">10x</option>
+            <option value="25x">25x</option>
+            <option value="50x">50x</option>
+            <option value="100x">100x</option>
+            <option value="150x">150x</option>
+          </select>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" min="0" step="0.01">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section>
+        <h2>Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order Type</th>
+              <th>Asset</th>
+              <th>Leverage</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="orders">
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Account</h2>
+        <table>
+          <tr>
+            <th>Balance</th>
+            <td id="balance"></td>
+          </tr>
+          <tr>
+            <th>Unrealized P&L</th>
+            <td id="pnl"></td>
+          </tr>
+          <tr>
+            <th>Realized P&L</th>
+            <td id="realized-pnl"></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
