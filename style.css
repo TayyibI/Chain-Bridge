@@ -1,4 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 2em;
+  }
+  
+  .form-container {
+    display: inline-block;
+    margin-top: 2em;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="submit"] {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .balance-container {
+    margin-top: 2em;
+  }
+  
+  .balance-container h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .balance-container p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .balance-container span {
+    font-weight: bold;
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;
   padding: 0;
